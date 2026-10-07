@@ -56,9 +56,6 @@ class MainActivity : ComponentActivity() {
         // Handle initial intent if app was opened via login deep link
         handleAuthIntent(intent)
 
-        // Automatically prompt the user for GPS Location & Notification permissions on launch
-        checkAndRequestAppPermissions()
-
         setContent {
             MyApplicationTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
@@ -68,6 +65,11 @@ class MainActivity : ComponentActivity() {
                     )
                 }
             }
+        }
+
+        // Post permission check after the first frame is rendered to eliminate SurfaceSyncGroup sync timeout
+        window.decorView.post {
+            checkAndRequestAppPermissions()
         }
     }
 

@@ -38,7 +38,7 @@ enum class AppTab(
     val testTag: String
 ) {
     TRACKER("Bugün", Icons.Filled.Home, Icons.Outlined.Home, "tab_today"),
-    PARTNER("Ailece", Icons.Filled.People, Icons.Outlined.People, "tab_partner"),
+    PARTNER("Yoldaşlar", Icons.Filled.People, Icons.Outlined.People, "tab_partner"),
     KAZA("Kaza", Icons.Filled.CalendarMonth, Icons.Outlined.CalendarMonth, "tab_kaza"),
     REPORT("Karne", Icons.Filled.EmojiEvents, Icons.Outlined.EmojiEvents, "tab_report")
 }
@@ -94,15 +94,15 @@ fun MainScreen(
                         Spacer(modifier = Modifier.width(10.dp))
                         Column {
                             Text(
-                                text = "Dijital Namaz Takip Sistemi",
-                                fontSize = 14.sp,
+                                text = "Namaz Yoldaşım",
+                                fontSize = 15.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = TextPrimary
                             )
                             Text(
                                 text = when (selectedTab) {
-                                    AppTab.TRACKER -> "Ana Sayfa • Vakit & Günlük Takip"
-                                    AppTab.PARTNER -> "Aile Halkası & Ortak Havuz"
+                                    AppTab.TRACKER -> "Vakitler & Günlük İbadet"
+                                    AppTab.PARTNER -> "Yoldaş Havuzu (Çok Kişilik)"
                                     AppTab.KAZA -> "Kaza Namazı Yönetimi"
                                     AppTab.REPORT -> "İbadet Karnesi & İstatistik"
                                 },

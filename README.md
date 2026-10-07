@@ -1,69 +1,58 @@
-# 👨‍👩‍👧 Aile ile Secdeye (v1.0 - Resmi Kararlı Sürüm)
+# 🤝 Namaz Yoldaşım (v1.0 - Resmi Sürüm)
 
 <p align="center">
-  <b>Dijital Namaz Takip Sistemi: Çekirdek ve Geniş Aileler İçin Ortak İbadet Havuzu, Canlı Aile Durum Paneli, Mahremiyet Korumalı Kaza Takibi ve Manevi İstikrar</b>
+  <b>Çok Kişilik Ortak İbadet & Kaza Havuzu, Canlı Yoldaşlık Paneli, Mahremiyet Korumalı Takip ve Otomatik Bulut Senkronizasyonu</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/bilkil53/aile-ile-secdeye/releases/latest/download/Ailece_Secde.apk">
-    <img src="https://img.shields.io/badge/İndir-Aile%20ile%20Secdeye%20v1.0%20(APK)-00897B?style=for-the-badge&logo=android&logoColor=white" alt="APK İndir" />
+  <a href="https://github.com/bilkil53/namaz-yoldasim/releases/latest/download/Namaz_Yoldasim.apk">
+    <img src="https://img.shields.io/badge/İndir-Namaz%20Yoldaşım%20v1.0%20(APK)-00897B?style=for-the-badge&logo=android&logoColor=white" alt="APK İndir" />
   </a>
   <img src="https://img.shields.io/badge/Sürüm-v1.0%20(Derleme%201)-0D47A1?style=for-the-badge" alt="Sürüm" />
   <img src="https://img.shields.io/badge/Platform-Android%207.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Mimari-MVVM%20%7C%20Jetpack%20Compose-purple?style=for-the-badge" alt="Mimari" />
-  <img src="https://img.shields.io/badge/Gizlilik-%25100%20Mahrem%20%26%20Yerel%20Veritabanı-brightgreen?style=for-the-badge" alt="Gizlilik" />
+  <img src="https://img.shields.io/badge/Model-Çok%20Kişilik%20Ortak%20Havuz-8E24AA?style=for-the-badge" alt="Model" />
+  <img src="https://img.shields.io/badge/Bulut-Otomatik%20Gmail%20Yedekleme-green?style=for-the-badge" alt="Bulut" />
 </p>
 
-> *"Ailene namazı emret ve onda sabırlı ol."* (Tâhâ Suresi, 132)
+> *"İyilik ve takva üzerinde yardımlaşın, günah ve düşmanlık üzerinde yardımlaşmayın."* (Mâide Suresi, 2)
 
 ---
 
-## 📱 İndirme ve Kurulum Bağlantıları
+## 📱 İndirme ve Resmi Kurulum
 
-Uygulamayı Android cihazınıza doğrudan indirmek ve kurmak için:
+Uygulamayı Android telefonunuza kurmak için doğrudan indirme bağlantısını kullanabilirsiniz:
 
-👉 **[📥 Aile ile Secdeye v1.0 APK İndir (Resmi ve Doğrudan)](https://github.com/bilkil53/aile-ile-secdeye/releases/latest/download/Ailece_Secde.apk)**
+👉 **[📥 Namaz Yoldaşım v1.0 APK İndir](https://github.com/bilkil53/namaz-yoldasim/releases/latest/download/Namaz_Yoldasim.apk)**
 
-* **Alternatif / GitHub Release:** [https://github.com/bilkil53/aile-ile-secdeye/releases](https://github.com/bilkil53/aile-ile-secdeye/releases)
-* **Paket Kimliği (ApplicationId):** `com.app.namazarkadasim` (veya `com.aistudio.aileilesecdeye`)
-* **Sürüm Kodu:** `1` (v1.0)
-* **Minimum Android:** Android 7.0 (API 24+)
-
----
-
-## 🌟 Öne Çıkan Özellikler ve Kullanım Detayları
-
-### 1. 📊 Canlı Aile Durum Paneli (Çift Yönlü Doğrulama)
-* **Gerçek Zamanlı Bağlantı Teyidi:** Kullanıcıların aktif havuzda olup olmadığını (`🟢 Çift Taraflı Bağlantı Aktif` / `⏳ Doğrulama Bekleniyor`) gösterir.
-* **"Bağlantıyı Teyit Et 🔄" Butonu:** Karşı taraf uygulamayı silip yeniden kursa bile tek tıkla canlı bağlantıyı yeniden teyit eder ve günceller.
-* **Davet Kodu Yönetimi:** Tek tıkla `Kodu Kopyala`, `WhatsApp/Paylaş` ve `Mail ile Davet Et`.
-
-### 2. 👨‍👩‍👧‍👦 Geniş Aile Havuzu (1. Kişi Merkezli)
-* **Kişi Rolleri ve İkonlar:** "Eş/Çocuk" gibi kalıp ifadeler yerine isteğe göre seçilebilen cinsiyet ve profil ikonları (👨, 👩, 👦, 👧).
-* **2., 3., 4. Kişi Desteği:** Anne, baba, çocuklar veya evin diğer fertleri aynı aile kodunu girerek ortak ibadet havuzuna dahil olabilir.
-
-### 3. 🔒 Mahremiyet Korumalı (Detaysız) Aile Kaza Özeti
-* **Kul Hakkı & İbadet Mahremiyeti:** Kimsenin hangi vakti kaza ettiği detaylı olarak başkalarına gösterilmez.
-* **Yalnızca Toplamlar:** Yalnızca o kişinin toplam kaza borcu ve erittiği kaza adedi özet chip olarak panoda yer alır.
-* **Hızlı Teşvik:** Aile fertleri için hızlı `"+1 Kaza Kıldı"` butonu.
-
-### 4. 📅 Dünün Aile Tablosu
-* Dünün namaz durumunu görmek için tarih seçici üzerinden "Dün" seçilebilir, ailenin dünkü başarı karnesi (5/5 rozetleri) incelenebilir.
-
-### 5. 🔄 2 Kişilik Sürümden (Namaz Arkadaşım) Kolay Geçiş
-* Evlilikten çocuklu geniş aileye geçen kullanıcılar için **Ayarlar ➔ 'Namaz Arkadaşım Verilerini İçe Aktar'** sihirbazı.
-* Geçmiş tüm kaza ve streak verileri tek tıkla kayıpsız olarak Aile ile Secdeye havuzuna aktarılır.
+* **Resmi GitHub Deposu:** [https://github.com/bilkil53/namaz-yoldasim](https://github.com/bilkil53/namaz-yoldasim)
+* **Paket Kimliği (ApplicationId):** `com.app.namazarkadasim` (veya `com.aistudio.namazyoldasim`)
+* **Sürüm:** `v1.0` (versionCode: 1)
+* **Hedef Kitle:** Eşler, aile fertleri, arkadaşlar, öğrenci evleri ve cemaat grupları (2 kişiden sınırsız kişiye kadar).
 
 ---
 
-## 🛠️ Kurulum (Geliştiriciler İçin)
+## 🌟 Öne Çıkan Özellikler ve Kullanım Kılavuzu
 
-```bash
-# Repoyu klonlayın
-git clone https://github.com/bilkil53/aile-ile-secdeye.git
-cd aile-ile-secdeye
+### 1. 👥 Sınırsız & Çok Kişilik Yoldaş Havuzu
+* **Tek Kodla Herkes Dahil:** 1. Kişi lider olarak bir yoldaşlık kodu üretir (`EMB-53XXXX`).
+* **Çoklu Katılım:** Eşiniz, çocuklarınız, arkadaşlarınız veya manevi kardeşleriniz bu kodu girerek aynı ibadet havuzunda buluşur. 2 kişi sınırlaması yoktur.
+* **Özelleştirilebilir Roller:** İster aile bireyi (Anne, Baba, Çocuk), ister arkadaş veya yoldaş olarak profil ikonu (👨, 👩, 👦, 👧) seçilebilir.
 
-# Projeyi derleyin
-./gradlew assembleRelease
-```
-Derlenen APK dosyası `app/build/outputs/apk/release/app-release.apk` dizininde oluşturulur.
+### 2. 📊 Canlı Yoldaşlık Durum Paneli
+* **Gerçek Zamanlı Bağlantı Teyidi:** Havuzdaki yoldaşların durumu (`🟢 Çift Taraflı Bağlantı Aktif` / `⏳ Doğrulama Bekleniyor`) anlık gösterilir.
+* **"Bağlantıyı Teyit Et 🔄":** Biri uygulamayı silip yeniden kursa bile tek dokunuşla canlı bağlantı yeniden sağlanır.
+* **Hızlı Davet:** Kodu kopyalama, WhatsApp ile paylaşma ve tek tıkla e-posta daveti.
+
+### 3. 🔒 Mahremiyet Korumalı Kaza Takibi
+* Kimsenin hangi vakti kaza ettiği detaylı olarak gösterilmez (ibadet mahremiyeti esastır).
+* Yalnızca toplam kaza borcu ve tamamlanan kaza adedi özet olarak panelde listelenir.
+* Yoldaşlar birbirlerini manevi olarak teşvik etmek için `"+1 Kaza Kıldı"` desteği verebilir.
+
+### 4. ☁️ Otomatik Bulut Senkronizasyonu (Gmail ile Kesintisiz Kurtarma)
+* Manuel yedek alma butonlarına ihtiyaç yoktur. Telefon internete bağlandığı anda kaza verileri ve havuz kodu otomatik buluta yazılır.
+* Telefon kaybolsa veya değişse dahi, aynı Gmail adresiyle giriş yapıldığı anda tüm veriler anında yeni cihaza geri yüklenir.
+
+### 5. 🕌 Diyanet Uyumlu Ezan Vakitleri & Kıble
+* Diyanet İşleri Başkanlığı'nın astronomik hesaplama algoritmalarıyla milisaniyelik vakitler.
+* GPS ile canlı şehir tespiti veya 81 il seçimi.
+* Vakitlere kalan süre canlı geri sayım sayacı.

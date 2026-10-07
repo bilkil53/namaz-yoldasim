@@ -1,6 +1,6 @@
 {
-  "name": "Aile ile Secdeye",
-  "description": "Aile ile Secdeye - Canlı Aile Durum Paneli, Ortak Havuz ve Manevi Takip Uygulaması",
+  "name": "Namaz Yoldaşım",
+  "description": "Namaz Yoldaşım - Çok Kişilik Ortak İbadet Havuzu, Yoldaşlık Paneli, Kaza Takibi ve Diyanet Vakitleri",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

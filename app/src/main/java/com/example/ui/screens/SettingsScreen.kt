@@ -266,8 +266,8 @@ fun SettingsScreen(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "Sistem", fontSize = 13.sp, color = TextSecondary)
-                        Text(text = "Dijital Namaz Takip", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = EmeraldPrimary)
+                        Text(text = "Uygulama", fontSize = 13.sp, color = TextSecondary)
+                        Text(text = "Namaz Yoldaşım", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = EmeraldPrimary)
                     }
 
                     HorizontalDivider(color = DividerColor, modifier = Modifier.padding(vertical = 8.dp))
@@ -277,7 +277,7 @@ fun SettingsScreen(
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(text = "Sürüm", fontSize = 13.sp, color = TextSecondary)
-                        Text(text = "v1.0 (Aile ile Secdeye)", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = EmeraldPrimary)
+                        Text(text = "v1.0 (Çok Kişilik Yoldaş Havuzu)", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = EmeraldPrimary)
                     }
 
                     HorizontalDivider(color = DividerColor, modifier = Modifier.padding(vertical = 8.dp))

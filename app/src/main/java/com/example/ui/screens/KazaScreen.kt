@@ -143,7 +143,7 @@ fun KazaScreen(
                             Spacer(modifier = Modifier.width(10.dp))
                             Column {
                                 Text(
-                                    text = "Aile Kaza Durumu (Detaysız)",
+                                    text = "Yoldaş Kaza Durumu (Detaysız)",
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = TextPrimary

@@ -460,7 +460,7 @@ fun PartnerScreen(
                                 Spacer(modifier = Modifier.width(10.dp))
                                 Column {
                                     Row(verticalAlignment = Alignment.CenterVertically) {
-                                        Text("Aile Durum Paneli", fontSize = 15.sp, fontWeight = FontWeight.Bold, color = TextPrimary)
+                                        Text("Namaz Yoldaşım Paneli", fontSize = 15.sp, fontWeight = FontWeight.Bold, color = TextPrimary)
                                         Spacer(modifier = Modifier.width(6.dp))
                                         Surface(
                                             shape = RoundedCornerShape(4.dp),
@@ -476,7 +476,7 @@ fun PartnerScreen(
                                         }
                                     }
                                     Text(
-                                        text = if (appMode == "FAMILY") "Aile ile Secdeye • Geniş Aile Havuzu" else "Namaz Arkadaşı • 2 Kişilik Mod",
+                                        text = "Çok Kişilik Ortak İbadet & Kaza Havuzu",
                                         fontSize = 11.sp,
                                         fontWeight = FontWeight.SemiBold,
                                         color = EmeraldPrimary
@@ -491,70 +491,41 @@ fun PartnerScreen(
 
                         Spacer(modifier = Modifier.height(10.dp))
 
-                        // 2. UYGULAMA MODU SEÇİCİ (2 Kişilik Namaz Arkadaşı vs Aile ile Secdeye)
+                        // 2. ÇOK KİŞİLİK YOLDAŞ HAVUZU BİLGİSİ
                         Surface(
                             color = SoftInfoCardBg,
                             shape = RoundedCornerShape(10.dp),
                             border = BorderStroke(1.dp, SoftInfoCardBorder),
                             modifier = Modifier.fillMaxWidth()
                         ) {
-                            Column(modifier = Modifier.padding(10.dp)) {
-                                Row(
-                                    modifier = Modifier.fillMaxWidth(),
-                                    horizontalArrangement = Arrangement.SpaceBetween,
-                                    verticalAlignment = Alignment.CenterVertically
+                            Row(
+                                modifier = Modifier.padding(10.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Surface(
+                                    shape = CircleShape,
+                                    color = EmeraldPrimary.copy(alpha = 0.12f),
+                                    modifier = Modifier.size(34.dp)
                                 ) {
-                                    Text("Uygulama Modu:", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = TextPrimary)
-                                    Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                                        Surface(
-                                            onClick = {
-                                                appMode = "FAMILY"
-                                                childPrefs.edit().putString("app_mode", "FAMILY").apply()
-                                                viewModel.showStatusMessage("Geniş Aile Modu aktif: Aile ile Secdeye 🤲")
-                                            },
-                                            shape = RoundedCornerShape(6.dp),
-                                            color = if (appMode == "FAMILY") EmeraldPrimary else Color.Transparent,
-                                            border = BorderStroke(1.dp, if (appMode == "FAMILY") EmeraldPrimary else CardBorderColor)
-                                        ) {
-                                            Text(
-                                                text = "Aile ile Secdeye",
-                                                fontSize = 10.sp,
-                                                fontWeight = FontWeight.Bold,
-                                                color = if (appMode == "FAMILY") Color.White else TextSecondary,
-                                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
-                                            )
-                                        }
-
-                                        Surface(
-                                            onClick = {
-                                                appMode = "PARTNER"
-                                                childPrefs.edit().putString("app_mode", "PARTNER").apply()
-                                                viewModel.showStatusMessage("2 Kişilik Mod aktif: Namaz Arkadaşı 🤝")
-                                            },
-                                            shape = RoundedCornerShape(6.dp),
-                                            color = if (appMode == "PARTNER") EmeraldPrimary else Color.Transparent,
-                                            border = BorderStroke(1.dp, if (appMode == "PARTNER") EmeraldPrimary else CardBorderColor)
-                                        ) {
-                                            Text(
-                                                text = "Namaz Arkadaşı (2 Kişilik)",
-                                                fontSize = 10.sp,
-                                                fontWeight = FontWeight.Bold,
-                                                color = if (appMode == "PARTNER") Color.White else TextSecondary,
-                                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
-                                            )
-                                        }
+                                    Box(contentAlignment = Alignment.Center) {
+                                        Icon(Icons.Filled.Groups, contentDescription = null, tint = EmeraldPrimary, modifier = Modifier.size(20.dp))
                                     }
                                 }
-                                Spacer(modifier = Modifier.height(4.dp))
-                                Text(
-                                    text = if (appMode == "FAMILY")
-                                        "2 kişilik olan uygulamamız Namaz Arkadaşı, bu mod ise tüm aile bireylerini kapsayan Aile ile Secdeye havuzudur."
-                                    else
-                                        "Namaz Arkadaşı modu: Sadece iki kişi arasında birebir manevi eşleşme ve namaz takibi sağlar.",
-                                    fontSize = 10.sp,
-                                    color = TextSecondary,
-                                    lineHeight = 14.sp
-                                )
+                                Spacer(modifier = Modifier.width(10.dp))
+                                Column(modifier = Modifier.weight(1f)) {
+                                    Text(
+                                        text = "Sınırsız Kişi & Çoklu Yoldaş Havuzu",
+                                        fontSize = 12.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = TextPrimary
+                                    )
+                                    Text(
+                                        text = "Eşiniz, aileniz, dostlarınız ve arkadaşlarınız tek bir yoldaşlık kodu ile aynı havuza bağlanabilir.",
+                                        fontSize = 10.sp,
+                                        color = TextSecondary,
+                                        lineHeight = 14.sp
+                                    )
+                                }
                             }
                         }
 
